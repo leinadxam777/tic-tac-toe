@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: rgb(110, 18, 167);
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-auto-rows: 230px;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.cell {
+    border: 5px solid rgb(70, 216, 30);
+    background-color: rgb(67, 11, 136);
+}
+
+.symbol {
+    color: yellow;
+    font-size: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+.banner {
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    background-color: crimson;
+    width: 1200px;
+    height: 400px;
+    transition: all 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.banner h1 {
+    position: relative;
+    left: 150px;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    line-height: 300px;
+}
+
+.tryAgain {
+    width: 300px;
+    color: white;
+    background-color: transparent;
+    border: 5px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+    right: 300px;
+    cursor: pointer;
+    /* Add a pointer cursor for the button */
+}
+
+.tryAgain:hover {
+    background-color: white;
+    color: crimson;
+}
+
+@media (max-width: 900px) {
+    .banner {
+        top: 250px;
+        width: 80%;
+        height: 200px;
+        left: 10%;
+
+    }
+
+    .banner h1 {
+        position: relative;
+        bottom: 70px;
+        left: 50px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .tryAgain {
+        width: 120px;
+        font-size: 20px;
+        right: 140px;
+        top: 60px;
+    }
+}
